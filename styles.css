@@ -1,0 +1,40 @@
+/* add your CSS here */
+
+#description {
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+#beagleimg {
+	margin-bottom: 12px;
+}
+
+#beagleinfo {
+	font-style: italic;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+#data span {
+	font-weight: bold;
+}
+
+#data {
+	list-style-type: none;
+	margin-left: 12px;
+	margin-right: 12px;
+	padding-left: 0;
+}
+
+#bdiv {
+	border: 1px solid black;
+}
+
+.info {
+	border: 1px solid black;
+	padding: 15px;
+	width: 300px;
+}
+
+
+
