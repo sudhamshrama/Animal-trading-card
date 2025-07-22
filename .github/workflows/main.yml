@@ -1,4 +1,21 @@
 trigger:
   branches:
     include:
-      - master
+      - terraform-vm
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: TerraformInstaller@1
+  inputs:
+    terraformVersion: '1.4.6'
+
+- script: terraform init
+  displayName: 'Terraform Init'
+
+- script: terraform validate
+  displayName: 'Terraform Validate'
+
+- script: terraform plan
+  displayName: 'Terraform Plan'
